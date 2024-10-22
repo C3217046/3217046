@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>簡単な計算</title>
+    <script>
+        // 初期値を設定
+        let a = 10;
+        let b = 4;
+
+        // 足し算
+        function add() {
+            let answer = a + b;
+            alert("足し算の結果: " + answer);
+        }
+
+        // 引き算
+        function subtract() {
+            let answer = a - b;
+            alert("引き算の結果: " + answer);
+        }
+
+        // 掛け算
+        function multiply() {
+            let answer = a * b;
+            alert("掛け算の結果: " + answer);
+        }
+
+        // 割り算
+        function divide() {
+            let answer = a / b;
+            alert("割り算の結果: " + answer);
+        }
+    </script>
+</head>
+<body>
+    <h1>計算を行います</h1>
+    <button onclick="add()">足し算</button>
+    <button onclick="subtract()">引き算</button>
+    <button onclick="multiply()">掛け算</button>
+    <button onclick="divide()">割り算</button>
+</body>
+</html>

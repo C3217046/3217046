@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>国旗切り替え</title>
+    <style>
+        #flag {
+            width: 200px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>国旗を表示する</h1>
+    <img id="flag" src="flag_IDN.png" alt="国旗">
+    
+    <button onclick="changeFlag('IDN')">インドネシア</button>
+    <button onclick="changeFlag('CHN')">中国</button>
+    <button onclick="changeFlag('USA')">アメリカ</button>
+    <button onclick="changeFlag('IND')">インド</button>
+
+    <script>
+        function changeFlag(countryCode) {
+            document.getElementById('flag').src = `flag_${countryCode}.png`;
+        }
+    </script>
+</body>
+</html>

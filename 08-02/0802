@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Switch構文の練習</title>
+</head>
+<body>
+  <h1>Switch構文の練習</h1>
+  <p>以下のリストから選択してください:</p>
+
+  <select id="menu" onchange="displayMessage()">
+    <option value="">選択してください</option>
+    <option value="1">オプション1</option>
+    <option value="2">オプション2</option>
+    <option value="3">オプション3</option>
+  </select>
+
+  <p id="result"></p>
+
+  <script>
+    function displayMessage() {
+      const menu = document.getElementById("menu").value;
+      const result = document.getElementById("result");
+      let message = "";
+
+      switch (menu) {
+        case "1":
+          message = "オプション1が選択されました。";
+          break;
+        case "2":
+          message = "オプション2が選択されました。";
+          break;
+        case "3":
+          message = "オプション3が選択されました。";
+          break;
+        default:
+          message = "選択が無効です。";
+          break;
+      }
+
+      result.textContent = message;
+    }
+  </script>
+</body>
+</html>
